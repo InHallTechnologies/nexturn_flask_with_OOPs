@@ -1,5 +1,5 @@
 from flask import Flask, request
-from StudentManager import StudentManager
+from .StudentManager import StudentManager
 from uuid import uuid4
 
 app = Flask(__name__)
