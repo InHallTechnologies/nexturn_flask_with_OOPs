@@ -37,5 +37,9 @@ def get_student_by_id(student_id):
             "student_id":found_item.student_id
         }
 
+@app.get("/test")
+def handle_test():
+    return "WORKING"
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
