@@ -1,2 +1,0 @@
--r ../requirements.txt
-serverless-wsgi==3.1.0

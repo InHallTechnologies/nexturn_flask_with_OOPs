@@ -40,8 +40,9 @@ dist/
 *.sln
 *.swp
 
-# Netlify
+# Netlify / Vercel
 .netlify/
+.vercel/
 functions_build/
 
 # OS
