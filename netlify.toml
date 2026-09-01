@@ -6,17 +6,9 @@
 [build.environment]
   PYTHON_VERSION = "3.12"
 
+# Route all requests to the serverless function
+# Mangum will extract the original path from the request event
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/students*"
-  to = "/.netlify/functions/api:splat"
-  status = 200
-
-[[redirects]]
-  from = "/test*"
-  to = "/.netlify/functions/api:splat"
+  from = "/*"
+  to = "/.netlify/functions/api"
   status = 200 
