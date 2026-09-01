@@ -1,1 +1,1 @@
-aws-lambda-wsgi==2.0.3
+awsgi==0.13.0

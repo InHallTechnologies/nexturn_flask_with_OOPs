@@ -6,11 +6,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / "src"))
 
 from api_test.main import app
-from aws_lambda_wsgi import response
+import awsgi
 
 def handler(event, context):
     """
     Netlify Functions handler that wraps the Flask app.
     Converts Lambda events/context to WSGI format and back.
     """
-    return response(app, event, context)
+    return awsgi.response(app, event, context)
