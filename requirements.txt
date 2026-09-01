@@ -13,4 +13,4 @@ idna==3.19
 urllib3==2.2.3
 currencyconverter==0.18.21
 frozen-flask==1.0.2
-awsgi==0.13.0
+mangum==0.27.0

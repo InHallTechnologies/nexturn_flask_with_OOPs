@@ -6,11 +6,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / "src"))
 
 from api_test.main import app
-import awsgi
+from mangum import Mangum
 
-def handler(event, context):
-    """
-    Netlify Functions handler that wraps the Flask app.
-    Converts Lambda events/context to WSGI format and back.
-    """
-    return awsgi.response(app, event, context)
+handler = Mangum(app)
