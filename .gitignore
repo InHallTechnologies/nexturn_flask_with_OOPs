@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Flask-specific 
+instance/
+.webassets-cache
+
+# Environments / Secrets
+.env
+.flaskenv
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build and distribution packages
+build/
+dist/
+*.egg-info/
+
+# SQLite databases (commonly used during local Flask development)
+*.db
+*.sqlite
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
